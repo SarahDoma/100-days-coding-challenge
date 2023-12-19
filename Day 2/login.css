@@ -1,0 +1,85 @@
+*{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: linear-gradient(to bottom right, #000000 30%, #111346 30% 75%, #3b38e6 75% 100%);
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 5px 5px 10px rgba(0,0,0.5,0.5);
+   background: linear-gradient(to bottom right, #000000 25%, #111346 55%, #3b38e6 85%);
+   opacity: 80%;
+   text-align: center;
+   width: 500px;
+   border-radius: 15px;
+}
+
+.form-container form h3{
+   font-size: 25px;
+   margin-bottom: 10px;
+   color:white;
+}
+
+.form-container form input {
+   width: 90%;
+   padding:10px 15px;
+   font-size: 13px;
+   margin:8px 0;
+   border: 2px solid white;
+   background-color: transparent;
+   border-radius: 5px;
+}
+
+.form-container form button {
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white
+}
+
+.form-container form .form-btn{
+   background: #fbd0d9;
+   color:#3b38e6;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: white;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 15px;
+   color:white;
+}
+
+.form-container form p a{
+   color: white;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: #3b38e6;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
