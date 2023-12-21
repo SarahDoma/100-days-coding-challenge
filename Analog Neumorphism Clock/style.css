@@ -43,6 +43,7 @@ body.light .clock {
     height: 15px;
     background: #fff;
     border-radius: 50%;
+    z-index: 15;
 }
 
 body.light .clock::before {
@@ -83,7 +84,7 @@ body.light .clock::before {
     width: 8px;
     height: 80px;
     background: #ff5f00;
-    z-index: 16;
+    z-index: 10;
     border-radius: 6px 6px 0 0;
 }
 
