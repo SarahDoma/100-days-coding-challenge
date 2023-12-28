@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirinda Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/mirinda.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h3>There's no flavour<br><span>like your flavour</span></h3>
+                <p>Alongside a Playful new visual identity system, which honours creativity and uniqueness in all generations. Placing boldness at the forefronts of Mirinda's 'M'pactful new look, the fruit flavoured carbonated soft drink brand aims to provide the much-needed spark of inspiration that Gen Z is craving.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/greenapple.png" class="mirinda">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/greenapple.png" onclick="imgSlider('images/greenapple.png');changeBgColor('green')"></li>
+            <li><img src="images/orange.png" onclick="imgSlider('images/orange.png');changeBgColor('#ff3B0A')"></li>
+            <li><img src="images/citrus1.png" onclick="imgSlider('images/citrus1.png');changeBgColor('#FFCC00')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.mirinda').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
