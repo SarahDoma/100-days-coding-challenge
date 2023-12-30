@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character set and viewport for better rendering on different devices -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Set the title of the document -->
+    <title>Day 11</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link to the Remix Icon library for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link to Google Fonts to use the Nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Team section -->
+    <section class="team">
+        <div class="center">
+            <!-- Heading for the team section -->
+            <h1>Our Team</h1>
+        </div>
+
+        <!-- Team content with individual team member boxes -->
+        <div class="team-content">
+            <!-- Team member box for Director role -->
+            <div class="box" data-bio="Alan Peterson is a seasoned managing director with a track record of successfully leading and delivering complex projects. He excels in strategic planning and team coordination.">
+                <img src="images/001.png">
+                <h3>Alan Peterson</h3>
+                <h5>Director</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for Tech Lead role -->
+            <div class="box"  data-bio="Khayra Ahmed is an experienced tech lead with a focus on motivating and guiding team members. She has a proven record of driving successful team outcomes and fostering collaboration.">
+                <img src="images/002.png">
+                <h3>Khayra Ahmed</h3>
+                <h5>Tech Lead</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for Human Resources role -->
+            <div class="box" data-bio="Kash Atharv is a skilled Human Resource handler.">
+                <img src="images/003.png">
+                <h3>Kash Atharv</h3>
+                <h5>Human Resources</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for Engineer role -->
+            <div class="box" data-bio="Damilare Felix is an experienced Engineer who has overseen many complex building projects.">
+                <img src="images/004.png">
+                <h3>Damilare Felix</h3>
+                <h5>Engineer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for detailed information -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <!-- Member details will be dynamically added here -->
+        </div>
+        <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>
