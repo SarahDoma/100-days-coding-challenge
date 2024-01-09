@@ -1,0 +1,93 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #121321;
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  perspective: 800px;
+}
+
+.card {
+  height: 380px;
+  width: 350px;
+  position: relative;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: 1s;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+.front-face {
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.front-face img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.12);
+}
+
+.details {
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+span {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.back-face {
+  justify-content: space-around;
+  transform: rotateY(180deg);
+}
+
+p {
+  font-size: 12px;
+  margin: 20px;
+  color: #ffffff;
+}
+
+.card:hover .back-face {
+  transform: rotateY(0deg);
+}
+
+.card:hover .front-face {
+  transform: rotateY(-180deg);
+}
