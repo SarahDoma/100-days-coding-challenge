@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 26 - Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <main class="main">
+
+        <div class="container">
+            <section class="quiz_box">
+                <div class="quiz_section">
+                    <h1>100DWDC Quiz Application</h1>
+                    <div class="quiz_header">
+                        <span>Quiz Website Tutorials</span>
+                        <span class="header_score">Score: 0 / 5</span>
+                    </div>
+
+                    <h2 class="question_text">What does HTML stand for?</h2>
+
+                    <div class="option_list">
+                        <div class="option">
+                            <span>A. Hyper Text Preprocessor</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Hyper Text Markup Language</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Hyper Text Multiple Language</span>
+                        </div>
+                        <div class="option">
+                            <span>D. Hyper Tool Multi Language</span>
+                        </div>
+                    </div>
+
+                    <div class="quiz_footer">
+                        <span class="question_total">1 of 5 Questions</span>
+                        <button class="next_btn">Next</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Quiz Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit ut ratione culpa rem nostrum excepturi ullam delectus consequatur recusandae, maxime quo fuga eos voluptas similique architecto repellat voluptatem? Quidem!</p>
+                    <button class="start_btn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>    
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <h2>Quiz Guide</h2>
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

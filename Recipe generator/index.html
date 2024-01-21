@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 25 - Recipe Food Generator</title>
+
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main container -->
+  <section class="container">
+    <!-- Meal wrapper containing search, results, and details -->
+    <div class="meal-wrapper">
+      <!-- Meal search section -->
+      <div class="meal-search">
+        <!-- Title and quote -->
+        <h2 class="title">Recipe Generator</h2>
+        <blockquote>
+          "There is no love sincerer than the love of food."
+          <br>
+          <cite>- George Bernard Shaw</cite>
+        </blockquote>
+
+        <!-- Search input and button -->
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Meal result section -->
+      <div class="meal-result">
+        <!-- Title for search results -->
+        <!-- <h2 class="title">Your Search Results:</h2> -->
+        <!-- Container for individual meal items (to be populated dynamically) -->
+        <div id="meal">
+          <!-- meal item (commented out as it will be dynamically generated) -->
+          <!-- <div class="meal-item">
+            <div class="meal-img">
+              <img src="food.jpg" alt="food">
+            </div>
+            <div class="meal-name">
+              <h3>Potato Chips</h3>
+              <a href="#" class="recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+      <!-- Meal details section -->
+      <div class="meal-details">
+        <!-- Button to close recipe details -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Container for meal details content -->
+        <div class="meal-details-content">
+          <!-- Recipe details (commented out as it will be dynamically generated) -->
+          <!-- <h2 class="recipe-title">Meals Name Here</h2>
+          <p class="recipe-category">Category Name</p>
+          <div class="recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+          <div class="recipe-meal-img">
+            <img src="food.jpg" alt="">
+          </div>
+          <div class="recipe-link">
+            <a href="#" target="_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for handling dynamic content -->
+  <script src="script.js"></script>
+</body>
+</html>
